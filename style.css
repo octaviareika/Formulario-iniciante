@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+    --branco-principal: #caebff;
+    --ver-secundario: rgb(22, 14, 179); 
+    --botao-azul: #138af2;
+    --cor-fundo: #010137; 
+    --cor-nav: 	#4bd9f6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: linear-gradient(var(--cor-fundo), var(--ver-secundario));
+   
+}
+
+.cabecalho {
+    background-color: var(--ver-secundario);
+}
+
+.divisao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    gap: 30px;
+    width: auto;
+}
+
+nav {
+    padding: 20px;
+}
+
+.link_botao {
+    padding: 10px;
+    background-color: var(--botao-azul);
+    margin: 23px;
+    border-width: 1px;
+    border-color: var(--cor-nav);
+    border-style: solid;
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.link_botao:hover {
+    background-color: var(--cor-fundo);
+    border-style: solid;
+    border-color: var(--cor-fundo);
+    color: var(--botao-azul);
+    transition: 0.5s;
+}
+
+.imagem-titulo {
+    height: 150px;
+    width: 300px;
+}
+
+main {
+    margin-top: 50px; /* rem: px/16*/ 
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+section {
+    border-radius: 16px;
+    border-style: solid;
+    border-color: var(--ver-secundario);
+    padding: 20px;
+    background-color: var(--branco-principal);
+}
+
+.imagem_borboleta {
+    height: 32px;
+    width: 45px;
+    display: block;
+    margin: 0px auto; /*centralizar a imagem */ 
+    padding-bottom: 10px;
+}
+
+.principal {
+    text-align: center; /* texto do formulario no centro */ 
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+    letter-spacing: 7px;
+}
+
+.formulario {
+    padding-top: 20px;
+}
+
+div {
+    width: 400px; /* mais alinhado para o centro, não significa que está alinhado para o centro */ 
+    padding: 20px;
+
+}
+
+.email {
+    padding: 0 0 20px 10px; /* separar a caixa de email com com a caixa de nome */ 
+}
+
+input[type='text'], [type='email'] {
+    background: none;
+    border: none;
+    border-bottom: solid 3px;
+    border-color: var(--ver-secundario);
+    padding: 0 0 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    width: 180px;
+}
+
+
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 3px;
+    border-color: var(--ver-secundario);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    padding: 0 0 0 10px;
+}
+
+.enviar {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: var(--botao-azul);
+    cursor: pointer;
+    border-style: solid;
+    border-color: var(--cor-fundo);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: none;
+}
+
+.enviar:hover {
+    background-color: var(--cor-fundo);
+    color: var(--botao-azul);
+    transition: 0.5s;
+}
+
+.rodape {
+    background-color: none;
+    height: 85px;
+}
+
+.criacao {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 900;
+}
